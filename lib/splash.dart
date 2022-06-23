@@ -18,7 +18,7 @@ class SplashScreen extends StatelessWidget {
         child: Container(
           color: Colors.blue,
           child: Center(
-            child: Text('Explore Hive', style: TextStyle(color: Colors.black,fontSize: 24, decoration: TextDecoration.none),),
+            child: Text('Explore Hive', style: TextStyle(color: Colors.black,fontSize: 26, decoration: TextDecoration.none, fontWeight: FontWeight.bold),),
           ),
         ));
   }
