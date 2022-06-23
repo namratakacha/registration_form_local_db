@@ -217,19 +217,19 @@ class _RegistrationPageState extends State<RegistrationPage> {
       }) {
     if (name.isEmpty) {
       ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text('Please enter Name')));
+          .showSnackBar(SnackBar(content: Text('Please enter Name'),backgroundColor: Colors.red,));
       return false;
     } else if (birthdate.isEmpty) {
       ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text('Please enter Birthdate')));
+          .showSnackBar(SnackBar(content: Text('Please enter Birthdate'), backgroundColor: Colors.red,));
       return false;
     } else if (mobileNumber.isEmpty) {
       ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text('Please enter Mobile Number')));
+          .showSnackBar(SnackBar(content: Text('Please enter Mobile Number'), backgroundColor: Colors.red,));
       return false;
     } else if (gender == null) {
       ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text('Please select Gender')));
+          .showSnackBar(SnackBar(content: Text('Please select Gender'),backgroundColor: Colors.red,));
       return false;
     }
     return true;

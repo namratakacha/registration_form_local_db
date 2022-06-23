@@ -11,15 +11,22 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Timer(
         Duration(seconds: 3),
-            () => Navigator.pushReplacement(
+        () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => MyHomePage())));
 
     return Container(
         child: Container(
-          color: Colors.blue,
-          child: Center(
-            child: Text('Explore Hive', style: TextStyle(color: Colors.black,fontSize: 26, decoration: TextDecoration.none, fontWeight: FontWeight.bold),),
-          ),
-        ));
+      color: Colors.blue,
+      child: Center(
+        child: Text(
+          'Explore Hive',
+          style: TextStyle(
+              color: Colors.black,
+              fontSize: 26,
+              decoration: TextDecoration.none,
+              fontWeight: FontWeight.bold),
+        ),
+      ),
+    ));
   }
 }
